@@ -1,7 +1,7 @@
 {
-  "name": "canvas-text-sdf",
+  "name": "canvas-text",
   "version": "1.0.0",
-  "description": "canvas2d text labels with SDF approximation",
+  "description": "better Canvas2D text rendering",
   "main": "index.js",
   "license": "MIT",
   "author": {
@@ -10,18 +10,28 @@
     "url": "https://github.com/mattdesl"
   },
   "dependencies": {
-    "canvas-loop": "^1.0.4",
-    "get-canvas-context": "^1.0.1",
+    "ctx-dashed-line": "^1.0.0",
+    "debounce": "^1.0.0",
+    "dprop": "^1.0.0",
     "object-assign": "^4.0.1",
     "word-wrapper": "^1.0.7"
   },
   "devDependencies": {
+    "browserify": "^11.1.0",
     "budo": "^5.0.0-beta4",
     "canvas-fit": "^1.5.0",
-    "garnish": "^3.2.0"
+    "canvas-loop": "^1.0.4",
+    "eases": "^1.0.6",
+    "garnish": "^3.2.0",
+    "get-canvas-context": "^1.0.1",
+    "lerp": "^1.0.3",
+    "pinkie-promise": "^1.0.0",
+    "raf-loop": "^1.1.3",
+    "uglify-js": "^2.4.24"
   },
   "scripts": {
-    "start": "budo test.js:bundle.js --live | garnish"
+    "start": "budo demo.js:bundle.js --live | garnish",
+    "build": "browserify index.js | uglifyjs -cm > bundle.js"
   },
   "keywords": [
     "sdf",
@@ -44,10 +54,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mattdesl/canvas-text-sdf.git"
+    "url": "git://github.com/mattdesl/canvas-text.git"
   },
-  "homepage": "https://github.com/mattdesl/canvas-text-sdf",
+  "homepage": "https://github.com/mattdesl/canvas-text",
   "bugs": {
-    "url": "https://github.com/mattdesl/canvas-text-sdf/issues"
+    "url": "https://github.com/mattdesl/canvas-text/issues"
   }
 }
