@@ -31,7 +31,7 @@
   },
   "scripts": {
     "start": "budo demo.js:bundle.js --live | garnish",
-    "build": "browserify index.js | uglifyjs -cm > bundle.js"
+    "build": "browserify demo.js | uglifyjs -cm > bundle.js"
   },
   "keywords": [
     "sdf",
