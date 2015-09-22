@@ -93,6 +93,7 @@ function loadFonts (fonts) {
 }
 
 function render (dt) {
+  dt = dt || 0
   time += dt / 1000
   animate = ease(Math.sin(time) * 0.5 + 0.5)
 
