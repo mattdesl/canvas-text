@@ -12,23 +12,15 @@ Easier Canvas2D text rendering.
 - inline styles
 - moar
 
-```js
-var createText = require('canvas-text')
+demo
 
-var context = require('2d-context')()
-var canvas = context.canvas
-
-var text = createText(context, 'some text', {
-  width: 200,
-  family: '"Open Sans", sans-serif',
-  size: 32
-})
-
-```
+http://mattdesl.github.io/canvas-text
 
 ## Usage
 
 [![NPM](https://nodei.co/npm/canvas-text.png)](https://www.npmjs.com/package/canvas-text)
+
+to come
 
 ## License
 
