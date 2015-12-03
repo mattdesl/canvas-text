@@ -12,9 +12,11 @@ Easier Canvas2D text rendering.
 - inline styles
 - moar
 
-demo
+Demo:
 
 http://mattdesl.github.io/canvas-text
+
+This still has some bugs that is cutting off text in places. If you'd like to contribute, drop me a line in the issues. For now, the current version is unstable `0.x` and undocumented until bugs are smoothed out.
 
 ## Usage
 

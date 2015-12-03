@@ -1,6 +1,6 @@
 {
   "name": "canvas-text",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "better Canvas2D text rendering",
   "main": "index.js",
   "license": "MIT",
